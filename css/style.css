@@ -1,0 +1,179 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+AU+TAS:wght@100..400&family=Playwrite+HR:wght@100..400&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --primary-color: #fb1c41;
+  --secondary-color: #0570fc;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+ 
+a {
+  text-decoration: none;
+}
+#about {
+  background-color: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+  background-color: #f5f5f5; /* Background color of the scrollbar track */
+}
+
+ 
+::-webkit-scrollbar-track {
+  background-color: #e0e0e0; /* Color of the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #005bb5; /* Darker color when hovering over thumb */
+}
+
+/* Navbar Styles */
+.wrapper {
+  padding: 4rem 0;
+}
+
+.main-btn {
+  display: inline-block;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  /* padding: 10px; */
+  font-size: 15px;
+  background: transparent;
+  text-transform: capitalize;
+  border-radius: 0.3rem;
+
+  transition: all 0.3s ease; /* Added transition for hover effect */
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--primary-color);
+  color: white;
+}
+.banner_wrapper button:nth-of-type(1) {
+  background-color: var(--primary-color);
+}
+.banner_wrapper button:nth-of-type(1):hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+/* Paragraph Styles */
+p {
+  font-size: 1rem;
+  color: gray;
+  line-height: 1.5; /* Adjusted for better readability */
+}
+
+/* Card Styles */
+.card {
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2); /* Improved shadow for better depth */
+  padding: 10px;
+  width: 100%;
+  margin: 0.5rem;
+
+  height: auto;
+  border: none;  
+  transition: transform 0.3s ease;  
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all ease 0.3s;
+}
+
+ 
+.header_wrapper,
+.navbar {
+  transition: all ease-in-out 0.3s; /* Added duration for smoother transitions */
+}
+
+.hamburger,
+.hamburger:focus {
+  color: var(--primary-color);
+  box-shadow: none;
+  border: none;  
+}
+
+/* Navbar Item Styles */
+.header_wrapper .nav-item {
+  margin: 5px 4px;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  margin: 0 0.5rem;
+}
+
+.header_wrapper .nav-item .nav-link:hover,
+.header_wrapper .nav-item .nav-link:focus,
+.header_wrapper .nav-item .nav-link.active {
+  color: var(
+    --secondary-color
+  ); /* Changed to use secondary color variable for consistency */
+}
+
+/* Scroll Effect on Navbar */
+header {
+  top: 0;
+  left: 0;
+  position: sticky;
+  width: 100%;
+  z-index: 55;
+}
+.scrolled {
+  background-color: #f1f1f1;
+
+  color: red;
+}
+/* banner */
+.banner_wrapper {
+  background-image: url("../assets/appointmnet-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 77px);
+}
+.banner_wrapper p {
+  max-width: 80%;
+  color: white;
+}
+.banner_wrapper h1,
+h4 {
+  color: white;
+}
+.top-right-sec img {
+  display: none;
+}
+.right {
+  right: 10%;
+}
+
+.res {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
